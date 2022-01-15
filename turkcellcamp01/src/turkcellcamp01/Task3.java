@@ -1,7 +1,7 @@
 package turkcellcamp01;
 
 public class Task3 {
-	//arkadas sayilar
+	//arkadas sayilarr
 
 	public static void main(String[] args) {
 		int sayi = 2;
