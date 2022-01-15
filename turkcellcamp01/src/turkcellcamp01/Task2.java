@@ -1,7 +1,7 @@
 package turkcellcamp01;
 
 import java.util.ArrayList;
-
+//mukemmel sayilar
 public class Task2 {
 
 	public static boolean mukemmelSayi(int sayi) {

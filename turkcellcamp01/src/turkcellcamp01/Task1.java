@@ -1,5 +1,5 @@
 package turkcellcamp01;
-
+//asal sayilar
 public class Task1 {
 
 	public static void main(String[] args) {
