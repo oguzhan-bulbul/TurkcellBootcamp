@@ -9,7 +9,7 @@ public class MyArrayList<T> {
     public void add(T item){
 
         if(this.temporaryArray.length==0){
-           temporaryArray= (T[]) new Object[temporaryArray.length+1];
+            temporaryArray= (T[]) new Object[temporaryArray.length+1];
             temporaryArray[0]=item;
             
         }
