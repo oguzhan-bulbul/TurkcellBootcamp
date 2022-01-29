@@ -10,6 +10,7 @@ public class Main {
 	        myArrayList.add("Adana4");
 	        myArrayList.remove(2);
 	        System.out.println(myArrayList.size());
+	        myArrayList.getValue();
 
 	}
 

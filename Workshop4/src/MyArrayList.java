@@ -9,13 +9,19 @@ public class MyArrayList<T> {
     public void add(T item){
 
         if(this.temporaryArray.length==0){
-            temporaryArray= (T[]) new Object[counter+1];
-            temporaryArray[counter]=item;
+           temporaryArray= (T[]) new Object[temporaryArray.length+1];
+            temporaryArray[0]=item;
+            
         }
         else {
             counter = temporaryArray.length;
-            temporaryArray= (T[]) new Object[counter+1];
-            temporaryArray[counter]=item;
+            T[] temporaryArray2 = temporaryArray.clone();
+            temporaryArray = (T[]) new Object[temporaryArray2.length+1];
+            for(int i=0;i<temporaryArray2.length;i++) {
+            	temporaryArray[i]=temporaryArray2[i];
+            }
+            temporaryArray[temporaryArray.length-1]=item;
+            
         }
     }
 
@@ -39,6 +45,12 @@ public class MyArrayList<T> {
 
     public int size(){
     return temporaryArray.length;
+    }
+    
+    public void getValue() {
+    	for(T t : temporaryArray) {
+    		System.out.println(t);
+    	}
     }
 	
 
