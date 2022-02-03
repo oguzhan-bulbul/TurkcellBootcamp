@@ -144,6 +144,9 @@ public class Main {
 		
 		System.out.println(cities.indexOf("Hatay"));
 		
+		// lastIndexOf(Object o) verilen nesnenin son karsilasilan index bilgisini dondurur
+			System.out.println(cities.lastIndexOf("Adana"));
+		
 		// isEmpty() eger array'de eleman yoksa true dondurur.
 		System.out.println(cities3.isEmpty());
 		
@@ -198,7 +201,9 @@ public class Main {
 		
 		cities.removeAll(cities2);
 		System.out.println(cities);
-		
+		//removeIf(Predicate<? super E> filter)
+		//Parametre olarak verilen filtreye uyan elemanlari listeden siler
+		cities.removeIf(n -> n.startsWith("T"));
 		//removeRange(int fromIndex , int toIndex) verilen baslangic ve bitis indexi arasindaki elemanlari siler.
 		//Bu fonksiyonun access modifier'i protected oldugu icin,
 		//Bu fonksiyon sadece ArrayList sinifini extend eden classlardan olusturulan nesnelerde kullanilabilir.
