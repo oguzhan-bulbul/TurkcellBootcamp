@@ -2,6 +2,7 @@ package lambdaExpressions;
 
 import java.util.ArrayList;
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 /*
  * Lambda expression java 8 ile birlikte gelen ozelliklerdendir.
@@ -43,6 +44,10 @@ public class Main {
 		
 		name.forEach(n -> { if(n.startsWith("O")) System.out.println(n);});
 		name.forEach(n -> { if(n.length()<4) System.out.println(n);});
+		
+		
+		
+		
 		
 		
 
